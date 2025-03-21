@@ -1,0 +1,51 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dhanify">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!-- LoginActivity needs android:exported since it has an intent filter -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- RegisterActivity should be exported if it can be accessed externally -->
+        <activity android:name=".RegisterActivity" android:exported="true" />
+
+        <!-- MainActivity does not need to be exported if it's only used internally -->
+        <activity android:name=".MainActivity" android:exported="false" />
+
+        <!-- GoalsActivity -->
+        <activity android:name=".GoalsActivity" android:exported="true" />
+
+        <!-- CoursesActivity -->
+        <activity android:name=".CoursesActivity" android:exported="true" />
+
+        <!-- QuizActivity -->
+        <activity android:name=".QuizActivity" android:exported="false" />
+
+        <!-- ViewGoalsActivity -->
+        <activity android:name=".ViewGoalsActivity" android:exported="false" />
+
+        <!-- ForumActivity -->
+        <activity android:name=".ForumActivity" android:exported="true" />
+
+        <!-- SimulationActivity -->
+        <activity android:name=".SimulationActivity" android:exported="true" />
+
+    </application>
+
+    <!-- Internet permission for Firebase and network operations -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+</manifest>
