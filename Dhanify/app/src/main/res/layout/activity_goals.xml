@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/purple_gradient"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button_background"
+        android:padding="12dp"
+        android:text="⬅ Back"
+        android:textColor="#FAF9F9"
+        android:textSize="16sp"
+        android:layout_gravity="start" />
+
+    <!-- Add New Goal Input -->
+    <EditText
+        android:id="@+id/notes_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="12dp"
+        android:hint="✍️ Enter your goal..."
+        android:padding="14dp"
+        android:background="@drawable/custom_edittext_background"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <!-- Save Goal Button -->
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button_background"
+        android:padding="14dp"
+        android:text="✅ Save Goal"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- View Goals Button -->
+    <Button
+        android:id="@+id/view_goals_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custom_button_background"
+        android:padding="14dp"
+        android:text="📋 View Goals"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</LinearLayout>
