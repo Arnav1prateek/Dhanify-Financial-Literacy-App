@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/purple_gradient"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Streak Display -->
+    <TextView
+        android:id="@+id/streak_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:text="Streak: 5 Days"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Take Quiz Icon Button -->
+
+
+    <!-- Go to Forum Icon Button -->
+    <ImageButton
+        android:id="@+id/quiz_button"
+        android:layout_width="109dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_button_background"
+        android:contentDescription="Take Quiz"
+        android:src="@drawable/ic_quiz" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Take Quiz"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/forum_button"
+        android:layout_width="101dp"
+        android:layout_height="108dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_button_background"
+        android:contentDescription="Go to Forum"
+        android:src="@drawable/ic_forum" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Forum"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <!-- Run a Simulation Icon Button -->
+    <ImageButton
+        android:id="@+id/simulation_button"
+        android:layout_width="99dp"
+        android:layout_height="95dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_button_background"
+        android:contentDescription="Run a Simulation"
+        android:src="@drawable/ic_simulation" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Run Simulation"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <!-- My Goals Icon Button -->
+    <ImageButton
+        android:id="@+id/goals_button"
+        android:layout_width="105dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_button_background"
+        android:contentDescription="My Goals"
+        android:src="@drawable/ic_goals" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="My Goals"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <!-- My Courses Icon Button -->
+    <ImageButton
+        android:id="@+id/courses_button"
+        android:layout_width="103dp"
+        android:layout_height="106dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_button_background"
+        android:contentDescription="My Courses"
+        android:src="@drawable/ic_courses" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="My Courses"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/points_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Points: 0"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/points_today_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Points Earned Today: +0 💯"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:id="@+id/coins_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coins: 0"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"/>
+</LinearLayout>

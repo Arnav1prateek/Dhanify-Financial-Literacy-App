@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/purple_gradient"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Question Text -->
+    <TextView
+        android:id="@+id/question_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <!-- Option Buttons -->
+    <Button
+        android:id="@+id/option1_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cust_back_button_yellow"
+        android:text="Option 1"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/option2_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cust_back_button_yellow"
+        android:text="Option 2"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/option3_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cust_back_button_yellow"
+        android:text="Option 3"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/option4_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cust_back_button_yellow"
+        android:text="Option 4"
+        android:textColor="@color/black" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_button_background"
+        android:text="Back"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>
