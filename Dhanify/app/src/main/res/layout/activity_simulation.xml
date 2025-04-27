@@ -1,0 +1,54 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Candlestick Chart -->
+    <com.github.mikephil.charting.charts.CandleStickChart
+        android:id="@+id/candlestick_chart"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentTop="true"/>
+
+    <!-- Market Price Text -->
+    <TextView
+        android:id="@+id/price_text"
+        android:text="Market Price: 100"
+        android:textSize="24sp"
+        android:layout_below="@id/candlestick_chart"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Coins Balance Text -->
+    <TextView
+        android:id="@+id/balance_text"
+        android:text="Coins: 0"
+        android:textSize="20sp"
+        android:layout_below="@id/price_text"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Predict Up Button -->
+    <Button
+        android:id="@+id/up_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/balance_text"
+        android:layout_centerHorizontal="true"
+        android:background="?attr/colorAccent"
+        android:text="Predict Up"
+        android:textColor="@color/white" />
+
+    <!-- Predict Down Button -->
+    <Button
+        android:id="@+id/down_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/up_button"
+        android:layout_centerHorizontal="true"
+        android:background="@color/design_default_color_error"
+        android:text="Predict Down"
+        android:textColor="@color/white" />
+</RelativeLayout>
